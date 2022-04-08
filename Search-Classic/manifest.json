@@ -1,0 +1,24 @@
+{																				
+  "update_url": "https://clients2.google.com/service/update2/crx",
+  "name": "Googe Search Classic",												
+  "description": "Clean up google searches",									
+  "version": "0.0.2.13",														
+  "icons": {																	
+    "16": "/img/16.png",														
+    "32": "/img/32.png",														
+    "48": "/img/48.png",														
+    "128": "/img/128.png"														
+  },																			
+ "content_scripts": [															
+     {																			
+         "matches": ["https://www.google.com/*"],								
+         "run_at": "document_start",											
+         "js": ["/clean.js"]													
+     },																			
+     {																			
+         "matches": ["https://www.google.com/*"],								
+         "js": ["/clean2.js"]													
+     }																			
+ ],																				
+  "manifest_version": 3 														
+}																				
