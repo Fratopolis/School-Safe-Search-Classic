@@ -14,3 +14,6 @@ You should also know that this extension is provided without any warranty or gua
 ## License
 
 This Extension is licensed under the [GNU General Public License, version 3 (GPLv3)](http://www.gnu.org/licenses/gpl-3.0.html) and is distributed free of charge.
+
+
+<meta name="google-site-verification" content="dd79rLrqOTWdjVL_mYuJ7DC3ClNKQqg23regHiqWdCo" />
