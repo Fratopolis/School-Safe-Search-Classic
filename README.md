@@ -8,9 +8,10 @@ This Extension collects no data whatsoever. The extension solely removes feature
 
 You are free to modify it for your own use and/or republish as your own. All I ask is that you give credit back to this page if republished anywhere or published on the chrome web store. I hold no responsiblity for anything this extension breaks and furthermore hold no repsonsibility for others copied/republished versions of this.
 
-You should also know that this extension is provided without any warranty or guarantee.
+You should also know that this extension is provided without any warranty or functional guarantee. With that being said I made this for the district where I work so if something is broken I usually know pretty fast. So far though we have not had any issues.
 
 
 ## License
 
 This Extension is licensed under the [GNU General Public License, version 3 (GPLv3)](http://www.gnu.org/licenses/gpl-3.0.html) and is distributed free of charge.
+ 
