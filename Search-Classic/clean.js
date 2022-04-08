@@ -5,7 +5,7 @@ LIST = LIST + ', .AuP6le, .VjDLd';
 //Searched "Frozen 2" Removed Videos, Trailers, Songs, and Clips
 LIST = LIST + ', .uVMCKf, .JNkvid, .LwV4sf, .M8OgIe, .LXqMce, .sfS5Re';
 //Searched "Frozen 2" Added options
-LIST = LIST + ', .wDYxhc';
+LIST = LIST + ', .rl_item';
 //Searched "Snake" Removed People also Ask
 LIST = LIST + ', .AuVD, .cUnQKe';
 //Searched "Snake" Removed Related Searches
