@@ -1,27 +1,35 @@
 //Removed Google Games
 var LIST = '.yp1CPe';
+//Searched "Frozen 2 songs" Removed youtube results
+LIST = LIST + ', .kWxLod';
 //Searched "Snake" Removed Google Feedback and see results about
-LIST = LIST + ', .AuP6le, .VjDLd';
+LIST = LIST + ', .VjDLd';//.AuP6le, 
 //Searched "Frozen 2" Removed Videos, Trailers, Songs, and Clips
-LIST = LIST + ', .uVMCKf, .JNkvid, .LwV4sf, .M8OgIe, .LXqMce, .sfS5Re';
-//Searched "Frozen 2" Added options
-LIST = LIST + ', .rl_item';
-//Searched "Snake" Removed People also Ask
+LIST = LIST + ', .uVMCKf, .JNkvid, .M8OgIe, .LwV4sf';//, .LXqMce, .sfS5Re'
+//Searched "Frozen 2" Added options like picutes and sub sections to results
+LIST = LIST + ', .NFQFxe';
+//Searched "pythons" Removed People also Ask
 LIST = LIST + ', .AuVD, .cUnQKe';
 //Searched "Snake" Removed Related Searches
-LIST = LIST + ', #w3bYAd';
+LIST = LIST + ', #w3bYAd, .AUiS2';
 //Searched "Snake" Removed Top Stories
-LIST = LIST + ', .yG4QQe, .TBC9ub';
-//Searched "Games" Removed top scroll bar
-LIST = LIST + ', .pGEVQb';
+LIST = LIST + ', [class="yG4QQe TBC9ub"]';
+//Searched "Video Games" Removed top scroll bar and popular options
+LIST = LIST + ', .baPFxb, .kSMK2';
 //Searched "blake shelton music videos" Removed Links to Videos
 LIST = LIST + ', .dFd2Tb, .mnr-c';
-//Searched "cartoons" Removed What to Watch
-LIST = LIST + ', .fvRoCd';
 //This removes ADs
 LIST = LIST + ', #tvcap, #bottomads';
-//This removes Side bar
+//Searched "Frozen 2" This removes right Side bar
 LIST = LIST + ', .hSOk2e';
+
+//Searched "let it go music" and "Frozen 2 songs" This removes other music/films related content and lists
+LIST = LIST + ', [data-attrid="action:listen_recording_cluster"]';
+LIST = LIST + ', [data-attrid="kc:/music/recording_cluster:other versions"]';
+LIST = LIST + ', [data-attrid="kc:/film/film:songs musicals"]';
+LIST = LIST + ', [data-attrid="LooselyRelatedTo"]';
+LIST = LIST + ', [data-attrid="list"]';
+LIST = LIST + ', [data-attrid="MembersOf"]';
 
 const mo = new MutationObserver(onMutation);
 // in case the content script was injected after the page is partially loaded
