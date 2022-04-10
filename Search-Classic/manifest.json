@@ -2,7 +2,7 @@
   "update_url": "https://clients2.google.com/service/update2/crx",
   "name": "Googe Search Classic",												
   "description": "Clean up google searches",									
-  "version": "0.0.2.13",														
+  "version": "0.0.3.12",														
   "icons": {																	
     "16": "/img/16.png",														
     "32": "/img/32.png",														
