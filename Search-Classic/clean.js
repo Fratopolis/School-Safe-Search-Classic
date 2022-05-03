@@ -1,7 +1,5 @@
 //Removed Google Games
-var LIST = '.yp1CPe';
-//Searched "Frozen 2 songs" Removed youtube results
-LIST = LIST + ', .kWxLod';
+var LIST = '[class="g mnr-c g-blk"]'; //'.yp1CPe';
 //Searched "Snake" Removed Google Feedback and see results about
 LIST = LIST + ', .VjDLd';//.AuP6le, 
 //Searched "Frozen 2" Removed Videos, Trailers, Songs, and Clips
@@ -16,12 +14,14 @@ LIST = LIST + ', #w3bYAd, .AUiS2';
 LIST = LIST + ', [class="yG4QQe TBC9ub"]';
 //Searched "Video Games" Removed top scroll bar and popular options
 LIST = LIST + ', .baPFxb, .kSMK2';
+//Searched "Video Games" Removed "Refine Video Games" options
+LIST = LIST + ', [class="vZFyxc SdYGsb"]';
 //Searched "blake shelton music videos" Removed Links to Videos
-LIST = LIST + ', .dFd2Tb, .mnr-c';
+LIST = LIST + ', .dFd2Tb, [jscontroller="pgCXqb"]';// .mnr-c
 //This removes ADs
-LIST = LIST + ', #tvcap, #bottomads';
+LIST = LIST + ', #tvcap, #bottomads, #botstuff';
 //Searched "Frozen 2" This removes right Side bar
-LIST = LIST + ', .hSOk2e';
+LIST = LIST + ', [role="complementary"]'; // .hSOk2e
 
 //Searched "let it go music" and "Frozen 2 songs" This removes other music/films related content and lists
 LIST = LIST + ', [data-attrid="action:listen_recording_cluster"]';
