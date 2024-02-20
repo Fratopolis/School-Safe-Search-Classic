@@ -1,6 +1,6 @@
 {
 	"update_url": "https://clients2.google.com/service/update2/crx",
-	"name": "Googe Search Classic",
+	"name": "Google Search Classic",
 	"description": "Clean up google searches",
 	"version": "0.0.6.30",
 	"icons": {
