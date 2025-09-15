@@ -1,39 +1,33 @@
 //Removed Google Games
-var LIST = '[class="g mnr-c g-blk"], [class="g wF4fFd g-blk"]'
-//This removes ADs
-LIST = LIST + ', #tvcap, #bottomads, #bres, [class="TzHB6b cLjAic"]';
-//This removes Feedback Line  and TAB LIST on some pages
-LIST = LIST + ', [class="rpBMYb kno-ftr"], [role="tablist"], .XqFnDf';
+var LIST = '.wF4fFd' 
+//This removes "People also Ask"
+	LIST = LIST + ', [class="cUnQKe"]';
+//This removes "From the Web" and "Short Videos" - Search "Video Games" or "let it go music" or "blake shelton music videos"
+	LIST = LIST + ', [class="Ww4FFb vt6azd"]';
+//This removes "Buying guide: Video Games" - Search "Video Games"
+	LIST = LIST + ', [class="mnr-c sPmWM"]';
+//This removes "ADs" and "People also search for"
+	LIST = LIST + ', #tvcap, #bottomads, #bres, [class="oIk2Cb"]';
 //This removes Google Maps video content "Milk Island"
-LIST = LIST + ', .kPvgOb, .widget-scene-imagery-iframe';
-//Searched "Video Games" Removed "Refine Video Games" options
-LIST = LIST + ', [class="vZFyxc SdYGsb"]';
+	LIST = LIST + ', .widget-scene-imagery-iframe';
+//Searched "Video Games" This removes "Deals on Video Games","More products","In stores nearby","Popular products"
+	LIST = LIST + ', .T98FId';
 //Searched "blake shelton music videos" Removed Links to Videos
-LIST = LIST + ', .dFd2Tb, [jscontroller="pgCXqb"]';// .mnr-c
-//Searched "Snake" Removed Top Stories
-LIST = LIST + ', [class="yG4QQe TBC9ub"]';
-//Searched "Video Games" Removed top scroll bar and popular options and Buying Options
-LIST = LIST + ', .baPFxb, .kSMK2, .sPmWM';
-//Searched "pythons" Removed People also Ask
-LIST = LIST + ', .AuVD, .cUnQKe';
-//Searched "Snake" Removed Related Searches
-LIST = LIST + ', #w3bYAd, .AUiS2, .oIk2Cb';
-//Searched "Frozen 2" Removed Videos, Trailers, Songs, and Clips
-LIST = LIST + ', .uVMCKf, .JNkvid, .M8OgIe, .LwV4sf';//, .LXqMce, .sfS5Re'
-//Searched "Frozen 2" Added options like picutes and sub sections to results
-LIST = LIST + ', .NFQFxe';
-
-//Right side bar
-LIST = LIST + ', .TzHB6b, .sATSHe'
+	LIST = LIST + ', [jsname="pKB8Bc"]';
+//Searched "Snake" This removes "Top Stories"
+	LIST = LIST + ', [class="yG4QQe TBC9ub NbhJ1c"]';
+//Searched "Video Games" This removes top scroll bar
+	LIST = LIST + ', #appbar';
+//Searched "Video Games" This removes "Videos"
+	LIST = LIST + ', [class="vtSz8d"]';
+//This removes "AI Overview"
+	LIST = LIST + ', [id="eKIzJc"]'; 
+//This removes "AI Mode"
+	LIST = LIST + ', [class="olrp5b"]'; // [class="XVMlrc C6AK7c"]
 
 
-//Searched "let it go music" and "Frozen 2 songs" This removes other music/films related content and lists
-LIST = LIST + ', [data-attrid="action:listen_recording_cluster"]';
-LIST = LIST + ', [data-attrid="kc:/music/recording_cluster:other versions"]';
-LIST = LIST + ', [data-attrid="kc:/film/film:songs musicals"]';
-LIST = LIST + ', [data-attrid="LooselyRelatedTo"]';
-LIST = LIST + ', [data-attrid="list"]';
-LIST = LIST + ', [data-attrid="MembersOf"]';
+////Searched "let it go music" and "Frozen 2 songs" This removes other music/films related content and lists
+//	LIST = LIST + ', [data-attrid="MembersOf"]';
 
 const mo = new MutationObserver(onMutation);
 // in case the content script was injected after the page is partially loaded
